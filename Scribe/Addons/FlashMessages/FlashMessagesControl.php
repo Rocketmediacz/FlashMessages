@@ -12,11 +12,11 @@ use Kdyby\Translation\Translator;
 use Scribe\Application\UI\Control;
 
 /**
- * Class FlashMessageControl
+ * Class FlashMessagesControl
  *
  * @author David Zadražil <me@davidzadrazil.cz>
  */
-class FlashMessageControl extends Control
+class FlashMessagesControl extends Control
 {
 
 	/** @var string */

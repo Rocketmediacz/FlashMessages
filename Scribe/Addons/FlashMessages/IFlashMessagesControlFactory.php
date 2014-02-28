@@ -13,13 +13,13 @@ namespace Scribe\Addons\FlashMessages;
  *
  * @author David Zadražil <me@davidzadrazil.cz>
  */
-interface IFlashMessageControlFactory
+interface IFlashMessagesControlFactory
 {
 
 	/**
 	 * @internal param null $templateFile
 	 *
-	 * @return FlashMessageControl
+	 * @return FlashMessagesControl
 	 */
 	public function create();
 
