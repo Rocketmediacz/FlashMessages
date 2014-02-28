@@ -17,8 +17,6 @@ interface IFlashMessagesControlFactory
 {
 
 	/**
-	 * @internal param null $templateFile
-	 *
 	 * @return FlashMessagesControl
 	 */
 	public function create();

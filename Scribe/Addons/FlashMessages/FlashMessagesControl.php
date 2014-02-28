@@ -28,17 +28,15 @@ class FlashMessagesControl extends Control
 
 
 	/**
-	 * @param \Kdyby\Translation\Translator $translator
+	 * @param Translator $translator
 	 * @param null $templateFile
 	 */
 	public function __construct(Translator $translator, $templateFile = NULL)
 	{
-		parent::__construct();
-
 		$this->translator = $translator;
 
 		if (!$templateFile) {
-			$templateFile = __DIR__ . '/FlashMessageControl.latte';
+			$templateFile = __DIR__ . '/FlashMessagesControl.latte';
 		}
 
 		$this->templateFile = $templateFile;
