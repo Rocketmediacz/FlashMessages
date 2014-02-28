@@ -1,0 +1,26 @@
+{
+    "name": "rocketmedia-cz/flashmessages",
+    "type": "addon",
+    "description": "Visual component for displaying FlashMessages",
+    "keywords": ["flashmessage", "nette", "rocketmedia"],
+    "homepage": "https://github.com/Rocketmediacz/FlashMessages",
+    "license": "Copyright 2014 David Zadrazil",
+    "minimum-stability": "dev",
+
+    "authors": [
+        {
+            "name": "David Zadrazil",
+            "homepage": "http://davidzadrazil.cz"
+        }
+    ],
+
+    "support": {
+        "email": "david@rocketmedia.cz",
+        "issues": "https://github.com/Rocketmediacz/FlashMessages/issues"
+    },
+
+    "require": {
+        "php": ">=5.4.0",
+        "nette/nette": "~2.1.0"
+    }
+}
