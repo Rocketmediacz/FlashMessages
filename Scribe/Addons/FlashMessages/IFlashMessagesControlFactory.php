@@ -17,8 +17,11 @@ interface IFlashMessagesControlFactory
 {
 
 	/**
+	 * @param $templateFile
+	 * @param $translator
+	 *
 	 * @return FlashMessagesControl
 	 */
-	public function create();
+	public function create($templateFile, $translator);
 
 }

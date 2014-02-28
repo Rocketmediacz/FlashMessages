@@ -8,7 +8,6 @@
 
 namespace Scribe\Addons\FlashMessages;
 
-use Kdyby\Translation\Translator;
 use Scribe\Application\UI\Control;
 
 /**
@@ -22,17 +21,19 @@ class FlashMessagesControl extends Control
 	/** @var string */
 	private $templateFile = NULL;
 
-	/** @var \Kdyby\Translation\Translator */
+	/* Translator */
 	private $translator;
 
 
 
 	/**
-	 * @param Translator $translator
 	 * @param null $templateFile
+	 * @param null $translator
 	 */
-	public function __construct(Translator $translator, $templateFile = NULL)
+	public function __construct($templateFile = NULL, $translator = NULL)
 	{
+		parent::__construct();
+
 		$this->translator = $translator;
 
 		if (!$templateFile) {
@@ -47,10 +48,9 @@ class FlashMessagesControl extends Control
 	public function render()
 	{
 		$flashes = [];
-
 		foreach ($this->parent->template->flashes as $flash) {
 			$flashes[] = [
-				'message' => $this->translator->translate($flash->message), // try to translate
+				'message' => isset($this->translator) ? $this->translator->translate($flash->message) : $flash->message,
 				'type'    => $flash->type,
 			];
 		}
