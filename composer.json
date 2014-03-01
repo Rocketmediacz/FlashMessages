@@ -24,9 +24,13 @@
         "nette/nette": "~2.1.0"
     },
 
+    "config": {
+        "vendor-dir": "libs"
+    },
+
     "autoload": {
         "psr-0": {
-            "Scribe\\Addons\\FlashMessages": "Scribe/Addons/FlashMessages/"
+            "Scribe": ""
         }
     }
 }
