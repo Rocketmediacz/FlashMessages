@@ -25,8 +25,8 @@
     },
 
     "autoload": {
-        "psr-0": {
-            "rocketmedia-cz": ""
-        }
-    }
+		"psr-0": {
+			"Scribe\\Addons\\FlashMessages": "Scribe/Addons/FlashMessages/"
+		}
+	},
 }
