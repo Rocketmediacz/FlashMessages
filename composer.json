@@ -21,16 +21,12 @@
 
     "require": {
         "php": ">=5.4.0",
-        "nette/nette": "~2.1.0"
-    },
-
-    "config": {
-        "vendor-dir": "libs"
+        "nette/nette": "dev-master"
     },
 
     "autoload": {
         "psr-0": {
-            "Scribe": ""
+            "Scribe\\Addons\\FlashMessages": "src/"
         }
     }
 }
